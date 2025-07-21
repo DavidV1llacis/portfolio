@@ -16,23 +16,23 @@
     </div>
     <div class="page-body">
         
-        <div id="about" class="view active">
-            <h1>Portafolio</h1>
+        <section id="about">
+            <h1>Sobre mí</h1>
             <aside>
                 <h4>David Villacis - Data Analyst</h4>
                 <img src="" alt="">
             </aside>
-        </div>
+        </section>
         
-        <div id="projects" class="view">
+        <section id="projects">
             <h1>Proyectos</h1>
             <p>
                 Participe en varios Proyectos:
                 <a href="assets/AMPctl/index.html">AMP ctl</a>    
             </p>
-        </div>
+        </section>
         
-        <div id="experience" class="view">
+        <section id="experience">
             <h1>Experiencia</h1>
             <p>
                 <h3>Interbank</h3>
@@ -56,32 +56,16 @@
                 </ul>
             </p>
             
-        </div>
+        </section>
         
-        <div id="contact" class="view">
+        <section id="contact">
             <h1>Contacto</h1>
             
-        </div>
+        </section>
         
     </div>
     
-    <script>
-        function showView(id) {
-            const views = document.querySelectorAll('.view');
-            views.forEach(view => view.classList.remove('active'));
-            document.getElementById(id).classList.add('active');
-        }
-        function handleHashChange() {
-            const hash = window.location.hash.substring(1); // quita el #
-            const viewId = hash || 'about'; // por defecto: 'about'
-            showView(viewId);
-        }
-        // Ejecuta cuando se carga la página
-        window.addEventListener('load', handleHashChange);
-        
-        // Ejecuta si el usuario cambia el hash manualmente o usa los botones del navegador
-        window.addEventListener('hashchange', handleHashChange);
-    </script>
+    
     
 </body>
 </html>
